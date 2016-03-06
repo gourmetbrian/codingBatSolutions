@@ -31,31 +31,31 @@ public int[] make2(int[] a, int[] b) {
 //Given 2 int arrays, a and b, of any length, return a new array with the first element of each array. If either array is length 0, ignore that array.
 
 public int[] front11(int[] a, int[] b) {
-int resSize = 2;
-if (a.length == 0 && b.length == 0)
-{
-  resSize = 0;
-}
+        int resSize = 2;
+        if (a.length == 0 && b.length == 0)
+        {
+                resSize = 0;
+        }
 
-if (a.length > 0 && b.length == 0 || a.length == 0 && b.length > 0) {
-resSize = 1;
-}
+        if (a.length > 0 && b.length == 0 || a.length == 0 && b.length > 0) {
+                resSize = 1;
+        }
 
-int[] res = new int[resSize];
+        int[] res = new int[resSize];
 
-if (a.length == 0 && b.length > 0)
-{
-res[0] = b[0];
-}
+        if (a.length == 0 && b.length > 0)
+        {
+                res[0] = b[0];
+        }
 
-else if (b.length == 0 && a.length > 0)
-{
-res[0] = a[0];
-}
-else if (resSize == 2) {
-res[0] = a[0];
-res[1] = b[0];
-}
-return res;
+        else if (b.length == 0 && a.length > 0)
+        {
+                res[0] = a[0];
+        }
+        else if (resSize == 2) {
+                res[0] = a[0];
+                res[1] = b[0];
+        }
+        return res;
 
 }
